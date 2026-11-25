@@ -4,6 +4,12 @@ An agent skill for checking whether economics research code implements the analy
 
 The skill traces inputs through data preparation, estimation or numerical solution, and the final tables and figures. When feasible, it independently reconstructs consequential calculations. Its reports distinguish verified errors, unresolved concerns, and documentation gaps.
 
+## Benchmark
+
+The skill was tested on 100 replication submissions built from 25 short economics papers. Half contained deliberately planted errors. The auditor detected all 77 planted errors, and scoring identified three reports that overstated what stress tests outside the papers’ stated settings established. The benchmark used short Python packages and one completed audit per submission.
+
+[Read the short benchmark paper (PDF)](docs/econ-audit-benchmark.pdf) for the experimental design, examples, and limitations.
+
 ## Use the skill
 
 Download or clone this repository. Keep `SKILL.md` and `references/` together when adding the folder to a compatible agent. You can also point an agent directly to `SKILL.md` and ask it to follow the workflow.
